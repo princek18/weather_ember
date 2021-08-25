@@ -1,0 +1,10 @@
+<div style="text-align: center;">
+    <img src={{@icon.icon}} alt="">
+</div>
+<div class="dis">
+    <div class="row">
+        {{#each-in @data as |key value|}}
+        <div style="align-items: center; justify-content:center; display:flex" class="col-4">{{key}}: {{value}}</div>
+        {{/each-in}}
+    </div>
+</div>

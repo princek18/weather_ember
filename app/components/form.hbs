@@ -1,0 +1,8 @@
+<form style="text-align: center;" onsubmit={{this.handleSubmit}} class="form1">
+    <input style="text-align:left;" type="text" value={{this.city}} oninput={{this.update}} placeholder="Enter City">
+</form>
+{{#if this.data.City}}
+<Display @icon={{this.icon}} @data={{this.data}}/>
+{{else}}
+<h1 style="text-align: center; margin-top: 2rem;">Nothing to show!</h1>
+{{/if}}
